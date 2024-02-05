@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Light-Gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    background-color: rgb(168, 161, 161);
+    width: 45rem;
+    height: 30rem;
+    box-shadow: 2px 2px 5px rgba(61, 61, 61, 0.192);
+    border-radius: 6px
+}
+
+.join {
+    background-color: #fff;
+    border-radius: 6px 6px 0 0;
+    width: 100%;
+    height: 45%;
+    padding: 50px;
+}
+
+.join h1 {
+    color: var(--Cyan);
+    margin-bottom: 1rem;
+}
+
+.join h2 {
+    color: var(--Bright-Yellow);
+    margin-bottom: 0.6rem;
+}
+
+.join p {
+    opacity: 0.8;
+    line-height: 1.5rem;
+}
+
+.two-column {
+    height: 60%;
+    background-color: aquamarine;
+    border-radius: 0 0 6px 6px;
+    display: flex;
+}
+
+.subscribe {
+    background-color: var(--Cyan);
+    width: 50%;
+    height: 100%;
+    border-radius: 0 0 0 6px;
+    padding: 50px;
+    color: #fff;
+}
+
+.subscribe h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.price {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+.price span{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.price small {
+    opacity: 0.8;
+}
+
+.access{
+    margin-bottom: 2rem;
+}
+
+.subscribe button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--Bright-Yellow);
+    color: #fff;
+    box-shadow: 2px 2px 5px #35343471;
+}
+
+.why {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(0, 182, 182);
+    color: #fff;
+    padding: 50px;
+}
+.why h2 {
+    margin-bottom: 1rem;
+}
+
+.why ul {
+    list-style: none;
+}
+
+.why li {
+    opacity: 0.8;
+    margin-bottom: 0.1rem;
+}
+
+@media screen and (max-width:900px) {
+
+    body {
+        height: 80rem;
+    }
+
+    .container {
+        background-color: var(--Light-Gray);
+        width: 20rem;
+        height: 70rem;
+    }
+
+    .join{
+        height: 40%;
+    }
+
+    .two-column {
+        flex-direction: column;
+    }
+
+    .subscribe {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .why {
+        width: 100%;
+        border-radius: 0 0 6px 6px;
+    }
+
+
+
+    
+}
